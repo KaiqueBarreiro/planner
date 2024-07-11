@@ -190,7 +190,7 @@ export default function Index () {
                         editable={stepForm === StepForm.TRIP_DETAILS} 
                         onFocus={()=> Keyboard.dismiss()} 
                         showSoftInputOnFocus={false} 
-                        onPress={()=> stepForm === StepForm.TRIP_DETAILS && setShowModal(MODAL.CALENDAR)}
+                        onPressIn={()=> stepForm === StepForm.TRIP_DETAILS && setShowModal(MODAL.CALENDAR)}
                         value={selectedDates.formatDatesInText}/>
                 </Input>
 
